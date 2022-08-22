@@ -1,0 +1,77 @@
+Projetos/.metadata/
+
+####### BACKEND #######
+
+Projetos/tasks-backend/HELP.md
+Projetos/tasks-backend/target/
+Projetos/tasks-backend/!.mvn/wrapper/maven-wrapper.jar
+Projetos/tasks-backend/!**/src/main/**
+Projetos/tasks-backend/!**/src/test/**
+
+### STS ###
+Projetos/tasks-backend/.apt_generated
+Projetos/tasks-backend/.classpath
+Projetos/tasks-backend/.factorypath
+Projetos/tasks-backend/.project
+Projetos/tasks-backend/.settings
+Projetos/tasks-backend/.springBeans
+Projetos/tasks-backend/.sts4-cache
+
+### IntelliJ IDEA ###
+Projetos/tasks-backend/.idea
+Projetos/tasks-backend/*.iws
+Projetos/tasks-backend/*.iml
+Projetos/tasks-backend/*.ipr
+
+### NetBeans ###
+Projetos/tasks-backend/nbproject/private/
+Projetos/tasks-backend/nbbuild/
+Projetos/tasks-backend/dist/
+Projetos/tasks-backend/nbdist/
+Projetos/tasks-backend//.nb-gradle/
+Projetos/tasks-backend/build/
+
+### VS Code ###
+Projetos/tasks-backend/.vscode/
+Projetos/tasks-backend/**/.DS_Store
+
+
+####### FRONTEND #######
+
+Projetos/tasks-frontend/HELP.md
+Projetos/tasks-frontend/target/
+Projetos/tasks-frontend/!.mvn/wrapper/maven-wrapper.jar
+Projetos/tasks-frontend/!**/src/main/**
+Projetos/tasks-frontend/!**/src/test/**
+
+### STS ###
+Projetos/tasks-frontend/.apt_generated
+Projetos/tasks-frontend/.classpath
+Projetos/tasks-frontend/.factorypath
+Projetos/tasks-frontend/.project
+Projetos/tasks-frontend/.settings
+Projetos/tasks-frontend/.springBeans
+Projetos/tasks-frontend/.sts4-cache
+
+### IntelliJ IDEA ###
+Projetos/tasks-frontend/.idea
+Projetos/tasks-frontend/*.iws
+Projetos/tasks-frontend/*.iml
+Projetos/tasks-frontend/*.ipr
+
+### NetBeans ###
+Projetos/tasks-frontend/nbproject/private/
+Projetos/tasks-frontend/nbbuild/
+Projetos/tasks-frontend/dist/
+Projetos/tasks-frontend/nbdist/
+Projetos/tasks-frontend/.nb-gradle/
+Projetos/tasks-frontend/build/
+
+### VS Code ###
+Projetos/tasks-frontend/.vscode/
+Projetos/tasks-frontend/**/.DS_Store
+
+
+####### JENKINS #######
+
+Ambiente/jenkins/jenkins_home/

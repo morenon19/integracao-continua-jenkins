@@ -1,0 +1,38 @@
+version: "3.3"
+services:
+  tomcat-hom:
+    image: tomcat:9.0.53-jre8-openjdk
+    container_name: tomcat-hom
+    volumes:
+      - ./tomcat-hom/app:/usr/local/tomcat/webapps/
+      - ./tomcat-hom/configs/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./tomcat-hom/configs/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+      - ./tomcat-hom/manager:/usr/local/tomcat/webapps/manager/
+    ports:
+      - "8081:8080"
+  tomcat-prod:
+    image: tomcat:9.0.53-jre8-openjdk
+    container_name: tomcat-prod
+    volumes:
+      - ./tomcat-prod/app:/usr/local/tomcat/webapps/
+      - ./tomcat-prod/configs/server.xml:/usr/local/tomcat/conf/server.xml
+      - ./tomcat-prod/configs/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+      - ./tomcat-prod/manager:/usr/local/tomcat/webapps/manager/
+    ports:
+      - "8082:8080"
+  postgres-hom:
+    image: postgres:9.6
+    container_name: postgres-hom
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=tasks
+    ports:
+      - "5432:5432"
+  jenkins:
+    user: root
+    image: jenkins-maven
+    container_name: jenkins
+    volumes:
+      - ./jenkins/jenkins_home:/var/jenkins_home
+    ports:
+      - "8090:8080"
